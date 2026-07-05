@@ -210,23 +210,23 @@ impl<W: Write> Printer<W> {
                 .map(Vec::len)
                 .sum::<usize>()
                 .to_formatted_string(&self.number_format)
-                .bold().blue(),
+                .bold().white(),
             language
                 .lines()
                 .to_formatted_string(&self.number_format)
-                .bold().blue(),
+                .bold().white(),
             language
                 .code
                 .to_formatted_string(&self.number_format)
-                .bold().blue(),
+                .bold().white(),
             language
                 .comments
                 .to_formatted_string(&self.number_format)
-                .bold().blue(),
+                .bold().white(),
             language
                 .blanks
                 .to_formatted_string(&self.number_format)
-                .bold().blue(),
+                .bold().white(),
         )
     }
 
